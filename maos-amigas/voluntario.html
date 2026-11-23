@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mãos Amigas · Quero ajudar</title>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+<main>
+<h1>Mãos Amigas</h1>
+<p class="mute">Encontre vizinhos e voluntários de confiança para ajudar no dia a dia.</p>
+
+<nav class="tabs" aria-label="Telas">
+<a href="index.html">Preciso de ajuda</a>
+<a href="voluntario.html" aria-current="page">Quero ajudar</a>
+</nav>
+
+<h2>Cadastre-se como voluntário</h2>
+<p class="mute">Seu nome e bairro aparecem para quem precisa de ajuda.</p>
+
+<label for="n">Seu nome</label><input id="n" autocomplete="given-name">
+<label for="b">Seu bairro</label><input id="b">
+<label for="c">Como você pode ajudar?</label><select id="c"></select>
+<label for="h">Quando está disponível?</label><input id="h" placeholder="Ex.: fins de semana">
+<label for="p">Valor mínimo que você cobra (R$)</label><input id="p" inputmode="decimal" placeholder="0 = voluntário, sem custo">
+<p></p>
+<button class="btn" id="save">Cadastrar</button>
+<div id="ok" class="toast hidden" role="status"></div>
+
+<div class="note"><strong>Emergência?</strong> Ligue 192 (SAMU) ou 190 (Polícia). Este aplicativo não atende urgências.</div>
+</main>
+<script src="js/dados.js"></script>
+<script src="js/voluntario.js"></script>
+</body>
+</html>

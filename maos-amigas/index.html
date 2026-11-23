@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mãos Amigas · Preciso de ajuda</title>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+<main>
+<h1>Mãos Amigas</h1>
+<p class="mute">Encontre vizinhos e voluntários de confiança para ajudar no dia a dia.</p>
+
+<nav class="tabs" aria-label="Telas">
+<a href="index.html" aria-current="page">Preciso de ajuda</a>
+<a href="voluntario.html">Quero ajudar</a>
+</nav>
+
+<h2>Do que você precisa?</h2>
+<div class="grid" id="cats"></div>
+
+<label for="o">Quanto você oferece pelo serviço? (R$)</label>
+<input id="o" inputmode="decimal" placeholder="Ex.: 30">
+<p class="mute small" style="margin-top:6px">O valor final é combinado direto com a pessoa. O app não recebe nem repassa dinheiro. Deixe em branco para combinar depois.</p>
+
+<h2 id="lt">Pessoas disponíveis</h2>
+<div id="list"></div>
+
+<div class="note"><strong>Emergência?</strong> Ligue 192 (SAMU) ou 190 (Polícia). Este aplicativo não atende urgências.</div>
+<p class="mute small" style="margin-top:16px">Protótipo com pessoas de exemplo. Em um app real, cada voluntário passaria por verificação de identidade.</p>
+</main>
+<script src="js/dados.js"></script>
+<script src="js/ajuda.js"></script>
+</body>
+</html>
